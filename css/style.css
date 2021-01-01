@@ -1,0 +1,21 @@
+.btn-floating {
+  border: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 15px 18px 0 rgba(0,0,0,.2);
+}
+.btn-floating:hover{
+  outline: 0;
+  box-shadow: 0 20px 25px 0 rgba(71,171,250,0.5);
+}
+
+.btn-floating:active{
+ transform: translateY(4px);
+}
+
+
+
+.container{
+  min-height: 90vh;
+}

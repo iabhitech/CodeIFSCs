@@ -1,0 +1,26 @@
+RewriteEngine on
+#RewriteBase http://localhost/codeifscs/
+#######Index File ######################
+DirectoryIndex index.php
+options +indexes
+#############Error Pages################
+#ErrorDocument 404 /errors/error_404.html
+#ErrorDocument 403 /error_403.html
+
+########################################
+RewriteCond %{REQUEST_URI} ^(.*)response\/?$
+RewriteRule ^(.*)\/?$ response.php [NC,END]
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
+
+
+RewriteCond %{REQUEST_URI} ^(.*)-us\/?$
+RewriteRule ^(.*)\/?$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_URI} ^(.*)-list\/?$
+RewriteRule ^(.*)\/?$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\/?$ index.php?url=$1 [NC,L]

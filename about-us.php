@@ -4,13 +4,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <?php echo '<base href='.$BASE_URL.'>'; ?>
-<!-- Chrome, Firefox OS and Opera --> <meta name="theme-color" content="#3f51b5"> 
-<!-- Windows Phone --> <meta name="msapplication-navbutton-color" content="#3f51b5"> 
-<!-- iOS Safari --> <meta name="apple-mobile-web-app-status-bar-style" content="#3f51b5">
+  <?php include 'include/head-meta-tag.php';?>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">

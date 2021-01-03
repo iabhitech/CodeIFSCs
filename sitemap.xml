@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_banks.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_states.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_cities.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_branch1.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_branch2.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_branch3.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_branch4.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_ifsc1.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_ifsc2.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_ifsc3.xml.gz</loc>
+    </sitemap>
+    <sitemap>
+      <loc>https://codeifscs.in/sitemaps/sitemap_ifsc4.xml.gz</loc>
+    </sitemap>
+  </sitemapindex>

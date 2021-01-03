@@ -14,13 +14,17 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
     $ifsc = $url[1];
     $sql = "SELECT * FROM data WHERE ifsc='$ifsc'";
     $row = mysqli_fetch_assoc(mysqli_query($conn, $sql));
-    if(!$row)
-       header('location: /');
-    $isFound = $showDetails = true;
-    $bank = $row['name'];
-    $state = $row['adr4'];
-    $city = $row['adr3'];
-    $branch = $row['adr1'];
+    if($row){
+        $isFound = $showDetails = true;
+        $bank = $row['name'];
+        $state = $row['adr4'];
+        $city = $row['adr3'];
+        $branch = $row['adr1'];
+    }
+    else{
+        $isFound = $showDetails = false;
+        $bank = 'All Bank';
+    }
   }
   else{
     $bank = str_replace('_',' ', $url[0]);
@@ -104,7 +108,6 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
     $URL = $BASE_URL."errors/error_404.html";
     echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
     echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
-    echo "Error";
     exit;
   }
 
@@ -118,21 +121,9 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 <head>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content='OAHyYJdHPjF6ZP2Wp_PRrF78QQEXC5tVRfuqdapsyXQ' name='google-site-verification'/>
-    
-    <?php echo '<base href='.$BASE_URL.'>'; ?>
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#3f51b5">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#3f51b5">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#3f51b5">
-    <meta name="keywords" content="IFSC code, IFSC, IFSC Code Bank, Find IFSC Code, MICR Code, Bank Details, Indian Financial System Code, NEFT, RTGS, IMPS, National Electronic Funds Transfer, Immediate Payment Service, List of IFSC codes" />
-    <meta itemprop="description" content=" Find IFSC, MICR Code of any bank across India. Find all bank details like address, contact numbers, IFSC, MICR code in just one click. List of all IFSC, MICR code of all banks">
-    
+   
+    <?php include 'include/head-meta-tag.php';?>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -150,7 +141,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 <body class="bg-light">
 
-    <?php include './include/nav.php'; ?>
+    <?php include_once './include/nav.php'; ?>
 
     <div class="container bg-white p-3">
         <div class="row">
@@ -303,7 +294,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
                 <!-- Card For Bank Details -->
                 <?php 
                   if($showDetails)
-                    include('include/bank-details.php');
+                    include_once('include/bank-details.php');
                 ?>
 
 
@@ -401,7 +392,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
         </svg>
     </button>
 
-
+    <?php include_once "include/footer.php"; ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -414,128 +405,15 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-
-    <!-- Script for IFSC Search Validation-->
-    <script type="text/javascript" charset="utf-8">
-    function searchValidation(e) {
-        var ifsc = e.value;
-        e.value = ifsc.toUpperCase();
-        btnSearch = document.getElementById('btn-search');
-
-        if (ifsc.length == 11) {
-            btnSearch.className = "btn btn-outline-white btn-block disabled"
-            var req = new XMLHttpRequest();
-            // var req = new ActiveXObject("Microsoft.XMLHTTP")
-            req.open("POST", "response", true);
-
-            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            req.send("ifsc=" + ifsc);
-
-            req.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    e.className = "form-control " + req.responseText;
-
-                    if (req.responseText == "is-valid")
-                        btnSearch.className = "btn btn-outline-white btn-block"
-                    btnSearch.href = 'ifsc/' + ifsc.toUpperCase();
-                }
-
-            }
-
-
-        } else {
-            btnSearch.className = "btn btn-outline-white btn-block disabled"
-            e.className = "form-control is-invalid"
-        }
-
-    }
-    </script>
-
-    <!-- IFSC Search By Address form Validation-->
-    <script>
-    function updateState(bankname) {
-        bankname = bankname.replace(/ /g, "_");
-        window.location = bankname;
-    }
-
-    function updateCity(statename) {
-        statename = statename.replace(/ /g, "_");
-        window.location = window.location + '/' + statename;
-    }
-
-    function updateBranch(cityname) {
-        cityname = cityname.replace(/ /g, "_");
-        window.location = window.location + '/' + cityname;
-    }
-
-    function updateSubmit(branchname) {
-        branchname = branchname.replace(/ /g, "_");
-        document.getElementById("btn-submit").href = window.location + '/' + branchname;
-    }
-    </script>
-
-    <!--//Copy Proper -->
-    <script>
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    })
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-    })
-    var cp = document.getElementsByClassName("cpy");
-    Array.from(cp).forEach((element) => {
-        element.addEventListener("click", (e) => {
-            tag = e.target.parentNode;
-            text = tag.innerHTML;
-            var res = '';
-            for (i = 0; text[i] != ' '; i++)
-                res += text[i];
-
-            //start Copying
-            navigator.clipboard.writeText(res).then(function() {
-                console.log('Async: Copying to clipboard was successful!');
-            }, function(err) {
-                console.error('Async: Could not copy text: ', err);
-            });
-            //end copy
-
-        })
-    })
-    </script>
-
-
+    <script src="js/app.js"></script>
 
     <!-- Script For change navBar active state -->
     <script>
-    e = document.getElementById('home');
-    e.className += " active";
+        e = document.getElementById('home');
+        e.className += " active";
     </script>
 
-
-    <script>
-    function share(e) {
-        shareTitle = "Find IFSC, MICR Code, Address of any Bank in India\n";
-        shareUrl = window.location.href;
-        try {
-            t = document.getElementById('shareText').innerHTML;
-            shareTitle += "Here is your " + t + "\n";
-        } catch (e) {}
-
-        if (navigator.share) {
-            navigator.share({
-                url: shareUrl,
-                title: shareTitle,
-                text: shareTitle
-            }).then(function() {
-                ga('send', 'event', 'share', 'success');
-            }, function(error) {
-                ga('send', 'event', 'share', 'error', error);
-            });
-        }
-
-    }
-    </script>
-    <?php include "include/footer.php"; ?>
+    
 </body>
 
 </html>

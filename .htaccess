@@ -1,4 +1,7 @@
 RewriteEngine on
+<IfModule mod_headers.c>
+Header set Access-Control-Allow-Origin '*'
+</IfModule>
 #RewriteBase http://localhost/codeifscs/
 #######Index File ######################
 DirectoryIndex index.php

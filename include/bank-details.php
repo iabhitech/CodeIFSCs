@@ -27,7 +27,7 @@ $link3 ="./bank-list.php?city=".str_replace(' ','+',$city);
       <td class="h5"><?php echo $row['ifsc']; ?> <!--<input class="cpy btn btn-primary btn-sm btn-block" type="button" value="Copy" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Copied" />-->
       
      
-<input type="button" class="cpy btn btn-primary btn-sm btn-block" value="Copy Code" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Code Copied"/>
+<input type="button" class="cpy btn btn-primary btn-sm btn-block" value="Copy Code" tabindex="0" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click to Copy"/>
       
       </td>
     </tr>
@@ -37,7 +37,7 @@ $link3 ="./bank-list.php?city=".str_replace(' ','+',$city);
       <td class="h5"><?php 
         if($row['micr'] !=''){
         echo $row['micr'];
-     echo ' <input type="button" class="cpy btn btn-primary btn-sm btn-block" value="Copy Code" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Code Copied"/>';
+     echo ' <input type="button" class="cpy btn btn-primary btn-sm btn-block" value="Copy Code" data-container="body" tabindex="0" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click to Copy"/>';
         }
         else{
           echo "NA";

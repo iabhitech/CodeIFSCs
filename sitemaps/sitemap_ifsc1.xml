@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://codeifscs.in/ifsc/UTIB0004567 </loc>
-</url>
-<url>
   <loc>https://codeifscs.in/ifsc/ABHY0065001</loc>
 </url>
 <url>
@@ -83395,7 +83392,7 @@
   <loc>https://codeifscs.in/ifsc/CBIN0280821</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/CBIN0280822 </loc>
+  <loc>https://codeifscs.in/ifsc/CBIN0280822</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/CBIN0280823</loc>
@@ -117208,7 +117205,7 @@
   <loc>https://codeifscs.in/ifsc/CNRB0006821</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/CNRB0006822 </loc>
+  <loc>https://codeifscs.in/ifsc/CNRB0006822</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/CNRB0006823</loc>
@@ -128113,7 +128110,7 @@
   <loc>https://codeifscs.in/ifsc/DCBL0000125</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/DCBL0000126 </loc>
+  <loc>https://codeifscs.in/ifsc/DCBL0000126</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/DCBL0000127</loc>
@@ -134999,5 +134996,8 @@
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/FDRL0001387</loc>
+</url>
+<url>
+  <loc>https://codeifscs.in/ifsc/FDRL0001388</loc>
 </url>
 </urlset>

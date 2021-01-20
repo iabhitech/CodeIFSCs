@@ -1,8 +1,8 @@
 <?php 
 $title = "$row[name] ($row[adr1]) IFSC Code, MICR, Contact Number, Address";
 $link1 ="./".str_replace(' ','_',$bank);
-$link2 ="./bank-list.php?branch=".str_replace(' ','+',$branch);
-$link3 ="./bank-list.php?city=".str_replace(' ','+',$city);
+$link2 ="./bank-list?branch=".str_replace(' ','+',$branch);
+$link3 ="./bank-list?city=".str_replace(' ','+',$city);
 ?>
 <a name="details"></a>
 <div class=" my-4 mb-4" >

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://codeifscs.in/ifsc/PUNB0292600</loc>
-</url>
-<url>
   <loc>https://codeifscs.in/ifsc/PUNB0292700</loc>
 </url>
 <url>
@@ -13702,7 +13699,7 @@
   <loc>https://codeifscs.in/ifsc/PUNB0SUPGB5</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/PUSD0000001 </loc>
+  <loc>https://codeifscs.in/ifsc/PUSD0000001</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/PUSD0000002</loc>
@@ -13813,7 +13810,7 @@
   <loc>https://codeifscs.in/ifsc/PUSD0000037</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/PUSD0000099 </loc>
+  <loc>https://codeifscs.in/ifsc/PUSD0000099</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/PYTM0000001</loc>
@@ -13828,7 +13825,7 @@
   <loc>https://codeifscs.in/ifsc/QNBA0000001</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/QNBA00000SC </loc>
+  <loc>https://codeifscs.in/ifsc/QNBA00000SC</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/RABO0000001</loc>
@@ -101479,7 +101476,7 @@
   <loc>https://codeifscs.in/ifsc/SIBL0000893</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/SIBL0000894 </loc>
+  <loc>https://codeifscs.in/ifsc/SIBL0000894</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/SIBL0000897</loc>
@@ -132607,7 +132604,7 @@
   <loc>https://codeifscs.in/ifsc/UBIN0566969</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/UBIN0566977 </loc>
+  <loc>https://codeifscs.in/ifsc/UBIN0566977</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/UBIN0566985</loc>
@@ -134999,5 +134996,8 @@
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/UBIN0575542</loc>
+</url>
+<url>
+  <loc>https://codeifscs.in/ifsc/UBIN0575551</loc>
 </url>
 </urlset>

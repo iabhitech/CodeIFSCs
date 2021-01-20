@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://codeifscs.in/ifsc/FDRL0001388</loc>
-</url>
-<url>
   <loc>https://codeifscs.in/ifsc/FDRL0001389</loc>
 </url>
 <url>
@@ -1213,7 +1210,7 @@
   <loc>https://codeifscs.in/ifsc/FDRL0001807</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/FDRL0001808 </loc>
+  <loc>https://codeifscs.in/ifsc/FDRL0001808</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/FDRL0001809</loc>
@@ -36886,7 +36883,7 @@
   <loc>https://codeifscs.in/ifsc/ICIC0000576</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/ICIC0000577   </loc>
+  <loc>https://codeifscs.in/ifsc/ICIC0000577</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/ICIC0000578</loc>
@@ -39577,7 +39574,7 @@
   <loc>https://codeifscs.in/ifsc/ICIC0001479</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/ICIC0001480  </loc>
+  <loc>https://codeifscs.in/ifsc/ICIC0001480</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/ICIC0001481</loc>
@@ -41308,7 +41305,7 @@
   <loc>https://codeifscs.in/ifsc/ICIC0002116</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/ICIC0002117   </loc>
+  <loc>https://codeifscs.in/ifsc/ICIC0002117</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/ICIC0002118</loc>
@@ -41740,7 +41737,7 @@
   <loc>https://codeifscs.in/ifsc/ICIC0002260</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/ICIC0002261 </loc>
+  <loc>https://codeifscs.in/ifsc/ICIC0002261</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/ICIC0002262</loc>
@@ -48205,7 +48202,7 @@
   <loc>https://codeifscs.in/ifsc/ICIC0006124</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/ICIC0006125 </loc>
+  <loc>https://codeifscs.in/ifsc/ICIC0006125</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/ICIC0006126</loc>
@@ -48223,10 +48220,10 @@
   <loc>https://codeifscs.in/ifsc/ICIC0006131</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/ICIC0006132 </loc>
+  <loc>https://codeifscs.in/ifsc/ICIC0006132</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/ICIC0006134 </loc>
+  <loc>https://codeifscs.in/ifsc/ICIC0006134</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/ICIC0006135</loc>
@@ -48376,7 +48373,7 @@
   <loc>https://codeifscs.in/ifsc/ICIC0006203</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/ICIC0006204 </loc>
+  <loc>https://codeifscs.in/ifsc/ICIC0006204</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/ICIC0006205</loc>
@@ -52714,7 +52711,7 @@
   <loc>https://codeifscs.in/ifsc/IDFB0040137</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/IDFB0040138 </loc>
+  <loc>https://codeifscs.in/ifsc/IDFB0040138</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/IDFB0040139</loc>
@@ -108820,7 +108817,7 @@
   <loc>https://codeifscs.in/ifsc/NBRD0000001</loc>
 </url>
 <url>
-  <loc>https://codeifscs.in/ifsc/NBRD0000002 </loc>
+  <loc>https://codeifscs.in/ifsc/NBRD0000002</loc>
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/NCUB0000001</loc>
@@ -134999,5 +134996,8 @@
 </url>
 <url>
   <loc>https://codeifscs.in/ifsc/PUNB0292500</loc>
+</url>
+<url>
+  <loc>https://codeifscs.in/ifsc/PUNB0292600</loc>
 </url>
 </urlset>

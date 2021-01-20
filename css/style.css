@@ -7,14 +7,16 @@
 }
 .btn-floating:hover{
   outline: 0;
-  box-shadow: 0 20px 25px 0 rgba(71,171,250,0.5);
+  box-shadow: 0 20px 25px 0 rgba(71,171,250,0.4);
 }
 
 .btn-floating:active{
  transform: translateY(4px);
 }
 
-
+.text-hint{
+  color: #d1ceff;
+}
 
 .container{
   min-height: 90vh;
